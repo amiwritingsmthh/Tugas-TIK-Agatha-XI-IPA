@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{background-color: aliceblue; font-family: verdana; text-align: center; color: rgb(87, 177, 255); font-size: 200%;}
+        button{font-weight: bold ;background-color: rgb(87, 177, 255);font-size: 150%; padding: 12px 28px; border-radius: 20px; border: none; font-family: verdana; color: aliceblue;}
+        input[type=text] {background-color: aliceblue; color: rgb(87, 177, 255); font-size:larger; width:10%; padding:14px 14px; box-sizing: border-box; border: 3px solid; border-radius: 10px; border-color: rgb(87, 177, 255)}
+    </style>
+    <title>The Triangle Calculator</title>
+</head>
+<body>
+    <b><p>Welcome to the Triangle Calculator</p></b>
+    <b><p>You can count a triangle area just by typing the height and base.</p></b> <br>
+    <b>Type the height below!</b> <br> <input type="text" id="height"> <br>
+    <b>Type the base below!</b> <br> <input type="text" id="base"> <br> <br>
+    <button type="button" onclick="countttt()">Count</button> <br> 
+    <b><p>Scroll Down</p></b> <br>
+    <h2>Result</h2>
+    <p id="resulthereee"></p>
+    <script>
+        function countttt(){
+            height=document.getElementById("height").value;
+            base=document.getElementById("base").value;
+            let countttt=(eval(height)*eval(base)/2);
+            document.getElementById("resulthereee").innerHTML=countttt;
+        }
+    </script>
+</body>
+</html>
